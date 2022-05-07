@@ -1,27 +1,37 @@
-import AllFuncionario from './components/AllFuncionario.vue';
-import CreateFuncionario from './components/CreateFuncionario.vue';
-import EditFuncionario from './components/EditFuncionario.vue';
-import FuncionarioAgrupado from './components/FuncionarioAgrupado.vue';
- 
+//import AllFuncionario from './components.bkp/AllFuncionario.vue';
+//import CreateFuncionario from './components.bkp/CreateFuncionario.vue';
+//import EditFuncionario from './components.bkp/EditFuncionario.vue';
+//import FuncionarioAgrupado from './components.bkp/FuncionarioAgrupado.vue';
+
+import LinesOfCode from './components/LinesOfCode.vue';
+import ProgramVolume from './components/ProgramVolume.vue';
+import AlgorithmVolume from './components/AlgorithmVolume.vue';
+import Integrity from './components/Integrity.vue';
+
 export const routes = [
     {
         name: 'home',
         path: '/',
-        component: AllFuncionario
+        component: Home
     },
     {
-        name: 'create',
-        path: '/create',
-        component: CreateFuncionario
+        name: 'LinesOfCode',
+        path: '/LinesOfCode',
+        component: LinesOfCode
     },
     {
-        name: 'edit',
-        path: '/edit/:id',
-        component: EditFuncionario
+        name: 'ProgramVolume',
+        path: '/ProgramVolume',
+        component: ProgramVolume
     },
     {
-        name: 'agrupado',
-        path: '/agrupado',
-        component: FuncionarioAgrupado
-    }
+        name: 'AlgorithmVolume',
+        path: '/AlgorithmVolume',
+        component: AlgorithmVolume
+    },
+    {
+        name: 'Integrity',
+        path: '/Integrity',
+        component: Integrity
+    },
 ];

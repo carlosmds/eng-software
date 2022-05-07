@@ -19,5 +19,13 @@ use Illuminate\Support\Facades\Route;
 // });
 
 Route::middleware('api')->group(function () {
-    Route::resource('funcionarios', App\Http\Controllers\FuncionarioController::class);
+    
+    //Route::resource('funcionarios', App\Http\Controllers\FuncionarioController::class);
+
+    Route::get('lines-of-code','App\Http\Controllers\SoftwareController@getLinesOfCode');
+
+    Route::get('volume-projeto', 'App\Http\Controllers\SoftwareController@programVolume');
+    Route::get('volume-algoritmo', 'App\Http\Controllers\SoftwareController@algorithmVolume');
+    
+    Route::get('integridade', 'App\Http\Controllers\SoftwareController@integrity'); 
 });
