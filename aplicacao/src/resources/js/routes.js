@@ -1,11 +1,8 @@
-//import AllFuncionario from './components.bkp/AllFuncionario.vue';
-//import CreateFuncionario from './components.bkp/CreateFuncionario.vue';
-//import EditFuncionario from './components.bkp/EditFuncionario.vue';
-//import FuncionarioAgrupado from './components.bkp/FuncionarioAgrupado.vue';
-
+import Home from './components/Home.vue';
 import LinesOfCode from './components/LinesOfCode.vue';
 import ProgramVolume from './components/ProgramVolume.vue';
 import AlgorithmVolume from './components/AlgorithmVolume.vue';
+import Maturity from './components/Maturity.vue';
 import Integrity from './components/Integrity.vue';
 
 export const routes = [
@@ -15,23 +12,28 @@ export const routes = [
         component: Home
     },
     {
-        name: 'LinesOfCode',
-        path: '/LinesOfCode',
+        name: 'lines-of-code',
+        path: '/lines-of-code',
         component: LinesOfCode
     },
     {
-        name: 'ProgramVolume',
-        path: '/ProgramVolume',
+        name: 'program-volume',
+        path: '/program-volume',
         component: ProgramVolume
     },
     {
-        name: 'AlgorithmVolume',
-        path: '/AlgorithmVolume',
+        name: 'algorithm-volume',
+        path: '/algorithm-volume',
         component: AlgorithmVolume
     },
     {
-        name: 'Integrity',
-        path: '/Integrity',
+        name: 'maturity',
+        path: '/maturity',
+        component: Maturity
+    },
+    {
+        name: 'integrity',
+        path: '/integrity',
         component: Integrity
     },
 ];
