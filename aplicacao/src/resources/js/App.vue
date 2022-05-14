@@ -5,6 +5,8 @@
                 <div class="navbar-nav">
                     <router-link to="/" class="nav-item nav-link">Home.</router-link> 
                     <router-link to="/lines-of-code" class="nav-item nav-link">Lines Of Code.</router-link> 
+                    <router-link to="/project-measure" class="nav-item nav-link">Project Measure.</router-link> 
+                    <router-link to="/agile-metrics" class="nav-item nav-link">Agile Metrics.</router-link> 
                     <router-link to="/program-volume" class="nav-item nav-link">Program Volume.</router-link> 
                     <router-link to="/algorithm-volume" class="nav-item nav-link">Algorithm Volume.</router-link> 
                     <router-link to="/maturity" class="nav-item nav-link">Software Maturity Calculator.</router-link> 

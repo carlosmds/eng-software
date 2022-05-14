@@ -20,6 +20,8 @@ use Illuminate\Support\Facades\Route;
 
 Route::middleware('api')->group(function () {
     Route::post('lines-of-code','App\Http\Controllers\SoftwareController@getLinesOfCode');
+    Route::post('project-measure','App\Http\Controllers\SoftwareController@projectMeasure');
+    Route::post('agile-metrics','App\Http\Controllers\SoftwareController@agileMetrics');
     Route::post('program-volume', 'App\Http\Controllers\SoftwareController@programVolume');
     Route::post('algorithm-volume', 'App\Http\Controllers\SoftwareController@algorithmVolume');
     Route::post('maturity', 'App\Http\Controllers\SoftwareController@maturity'); 

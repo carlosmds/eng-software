@@ -1,4 +1,6 @@
 import Home from './components/Home.vue';
+import ProjectMeasure from './components/ProjectMeasure.vue';
+import AgileMetrics from './components/AgileMetrics.vue';
 import LinesOfCode from './components/LinesOfCode.vue';
 import ProgramVolume from './components/ProgramVolume.vue';
 import AlgorithmVolume from './components/AlgorithmVolume.vue';
@@ -15,6 +17,16 @@ export const routes = [
         name: 'lines-of-code',
         path: '/lines-of-code',
         component: LinesOfCode
+    },
+    {
+        name: 'project-measure',
+        path: '/project-measure',
+        component: ProjectMeasure
+    },
+    {
+        name: 'agile-metrics',
+        path: '/agile-metrics',
+        component: AgileMetrics
     },
     {
         name: 'program-volume',
